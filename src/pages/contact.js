@@ -2,13 +2,16 @@ import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
 import ContactForm from "../components/form"
+import SSRProvider from "react-bootstrap/SSRProvider"
 
 const Contact = () => {
   return (
-    <Layout>
-      <Head title="Contact" />
-      <ContactForm />
-    </Layout>
+    <SSRProvider>
+      <Layout>
+        <Head title="Contact" />
+        <ContactForm />
+      </Layout>
+    </SSRProvider>
   )
 }
 
