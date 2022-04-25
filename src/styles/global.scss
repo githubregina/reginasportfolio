@@ -1,0 +1,103 @@
+@import 'config';
+@import 'utilities';
+@import "~bootstrap/scss/bootstrap";
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: $light-color;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+img,
+picture {
+  width: 100%;
+}
+
+
+footer {
+  background: $dark-color;
+  color: #fff;
+  height: 7rem;
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    padding-top: 1rem;
+  }
+  
+  .social a {
+    color: #fff;
+  }
+  
+  .social .bi {
+    margin: 1rem;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+    
+    &:hover {
+      background: $main-color;
+    }
+  }
+}
+
+.hero-section {
+  background: url("../assets/images/bg.jpeg") no-repeat center right/cover;
+  height: calc(100vh - 184px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem; 
+  }
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline {
+  background: $light-color;
+}
+
+@import 'media';

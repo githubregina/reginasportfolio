@@ -1,0 +1,93 @@
+@media only screen and (min-width: 768px){
+  .layout {
+    min-height: calc(100vh - 5rem);
+  }
+
+  footer {
+    height: 5rem;
+
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 5rem;
+      padding: 0;
+
+      p {
+        margin: 1rem;
+      }
+    }
+  }
+
+  .lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section{
+    height: calc(100vh - 152px);
+    
+    .hero-content {
+      
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+      
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    
+  }
+}
+
+@media screen and (orientation:landscape) and (max-height: 580px) {
+
+  .hero-section {
+    height: 320px;
+
+    .hero-content {
+      padding-top: 3rem;
+    }
+
+    h1 {
+      font-size: 1.8rem !important;
+    }
+
+  }
+ 
+  footer {
+    height: 5rem;
+
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 5rem;
+      padding: 0;
+
+      p {
+        margin: 1rem;
+      }
+    }
+  }
+  
+
+  .card-img {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
