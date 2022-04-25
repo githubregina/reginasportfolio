@@ -3,6 +3,10 @@ import Header from "./header"
 import Footer from "./footer"
 import { useStaticQuery, graphql } from "gatsby"
 
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap-icons/font/bootstrap-icons.css"
+import "../styles/global.scss"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
