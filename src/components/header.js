@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap"
 const Header = ({ siteTitle }) => {
   return (
     <header>
-      <Navbar sticky="top" bg="dark" variant="dark" expand="sm">
+      <Navbar sticky="top" variant="dark" expand="md">
         <Container>
           <Navbar.Brand
             href="/"
@@ -16,6 +16,7 @@ const Header = ({ siteTitle }) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/experience">Experience</Nav.Link>
               <Nav.Link href="/certificate">Certificate</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>

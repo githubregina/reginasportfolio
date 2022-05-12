@@ -8,16 +8,24 @@ module.exports = {
     author: `Regina`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
-    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    //   },
-    // },
-    // "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
   ],
 }

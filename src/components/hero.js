@@ -26,7 +26,10 @@ const Hero = () => {
             aria-hidden="true"
           ></i>
         </p>
-        <p>Call me Regina if you find it easier.</p>
+        <p>
+          Call me <span className="highlighter">Regina</span> if you find it
+          easier.
+        </p>
         <p>
           I am a self-taught programmer, I have started this journey and dived
           into the World of Coding in 2021.

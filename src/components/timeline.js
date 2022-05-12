@@ -8,8 +8,9 @@ import "react-vertical-timeline-component/style.min.css"
 
 const Timeline = () => (
   <div className="timeline py-5">
-    <h2 className="section-title">Work Experience</h2>
+    <h2 className="section-title">Experience</h2>
     <div className="bottom-line"></div>
+    <p className="lead text-center">Work and Education</p>
     <div className="container">
       <VerticalTimeline>
         <VerticalTimelineElement

@@ -1,6 +1,6 @@
+@import "~bootstrap/scss/bootstrap";
 @import 'config';
 @import 'utilities';
-@import "~bootstrap/scss/bootstrap";
 
 /* Box sizing rules */
 *,
@@ -32,6 +32,10 @@ html:focus-within {
 a {
   text-decoration: none;
   color: $dark-color;
+
+  &:hover {
+    color: inherit;
+  }
 }
 
 img,
@@ -39,6 +43,9 @@ picture {
   width: 100%;
 }
 
+header {
+  background-color: $dark-color;
+}
 
 footer {
   background: $dark-color;
@@ -83,6 +90,7 @@ footer {
 
   .hero-content {
     text-align: center;
+    max-width: 700px;
   }
 
   .hero-content h1 {
@@ -99,5 +107,45 @@ footer {
 .timeline {
   background: $light-color;
 }
+
+.certificate-content {
+  max-width: 800px;
+}
+
+.about-post {
+  width: 80%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 2px solid $third-color;
+  border-top: 26px solid $third-color;
+  box-shadow: 2px 2px 5px 2px $third-color;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: $dark-color;
+
+  &:hover {
+    border-top: 26px solid $main-color;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+  } 
+}
+
+.post-content {
+  margin: 1.5rem auto;
+  max-width: 700px;
+}
+
+.post-img {
+  margin: 2rem auto;
+
+  img {
+    object-fit: contain;
+    max-height: 50vh;
+  }
+}
+
 
 @import 'media';

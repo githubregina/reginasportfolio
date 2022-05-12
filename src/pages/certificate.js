@@ -12,8 +12,8 @@ const Cert = () => {
         <Head title="Certificate" />
         <div className="certificate-section py-5">
           <h2 className="section-title">Certification</h2>
-          <div class="bottom-line"></div>
-          <div className="container">
+          <div className="bottom-line"></div>
+          <div className="certificate-content container">
             <div className="list-group">
               <a
                 href="https://www.udemy.com/certificate/UC-f7ca6a89-6a67-4487-9ccf-63fe58dc5f38/"
@@ -65,7 +65,7 @@ const Cert = () => {
                 <small className="text-muted">London, UK</small>
               </a>
               <a
-                href="https://techlabs.london/"
+                href="https://medium.com/@london_6354/safety-search-739f3e39ae30"
                 target="_blank"
                 rel="noreferrer"
                 className="list-group-item list-group-item-action"

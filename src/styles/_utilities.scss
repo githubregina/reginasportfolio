@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.highlighter {
+  color: $main-color;
+}
+
 .section-title {
   font-size: 2rem;
   display: block;
@@ -28,4 +32,56 @@
   background: $main-color;
   display: block;
   margin: 0 auto 1rem auto;
+}
+
+.to-top-btn {
+  position: relative;
+
+  i {
+    font-size: 2rem;
+  }
+}
+
+.icon-position{
+  position: fixed;
+  bottom: 120px;
+  right: 25px;
+  z-index: 20;
+}
+
+.icon-style{
+  background-color: $dark-color;
+  border: 2px solid $light-color;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    animation: none;
+    background: $main-color;
+    color: #fff;
+    border: 2px solid $dark-color;
+  }
+}
+
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }

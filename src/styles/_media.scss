@@ -37,7 +37,6 @@
         font-size: 1.8rem;
       }
     }
-    
   }
 }
 
@@ -71,9 +70,16 @@
     }
   }
   
-
   .card-img {
     display: none;
+  }
+
+  .post-img {
+    margin: 1rem auto;
+  
+    img {
+      max-height: 80vh;
+    }
   }
 }
 
